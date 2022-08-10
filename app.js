@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
   const newDate = addDays(new Date(), 100);
   response.send(
     `${newDate.getDate()} /
-      ${newDate.getMonth()} /
+      ${newDate.getMonth()+1} /
       ${newDate.getFullYear()}`
   );
 });
